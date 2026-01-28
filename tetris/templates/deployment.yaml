@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "tetris.fullname" . }}
+  name: tetris
   labels:
     {{- include "tetris.labels" . | nindent 4 }}
 spec:
